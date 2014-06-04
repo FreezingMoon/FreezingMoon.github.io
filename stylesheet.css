@@ -1,0 +1,143 @@
+body {
+	text-align: center;
+	margin: 0 auto;
+	width: 960px;
+	color: #afdaea;
+	border: 0px solid black;
+	font-size: 16px;
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	background: #142431 url('images/bg.jpg') no-repeat center top fixed;
+	/*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+	overflow-x: hidden;*/
+}
+
+.rounded {
+	border-radius: 15px;
+}
+
+.segment {
+	background: rgba(72,73,86,0.8);
+	border-radius: 15px;
+	padding: 18px;
+	margin: 20px auto;
+	box-shadow: inset 0 0 2px 2px rgba(105,110,185,0.6),
+	inset 0 0 10px 5px rgba(105,110,185,0.4),
+	0 0 20px 4px rgba(0,0,0,0.6);
+}
+
+img {
+	border: none;
+	margin: -2px 0px -2px 0px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+td {
+	padding: 0px;
+	margin: 0px;
+}
+
+.center {
+	margin-left: auto!important;
+	margin-right: auto!important;
+	text-align: center!important;
+}
+
+@font-face {
+	font-family: Charlemagnestd;
+	src: url('/charlemagnestd-bold.otf');
+}
+
+.title {
+	font-size: 24px;
+	font-family: Charlemagnestd;
+}
+
+#wrapper {
+	text-align: left;
+	margin: 0 auto;
+	width: 910px;
+}
+
+h1 {
+	font-size: 32px;
+	font-family: Charlemagnestd;
+}
+
+h2 {
+	font-size: 24px;
+	font-family: Charlemagnestd;
+}
+
+hr {
+	background-color: #afdaea;
+	color: #afdaea;
+	height: 1px;
+	border: 0px;
+}
+
+a:link {text-decoration: none; color: #93cfe2;}
+a:visited {text-decoration: none; color: #93cfe2;}
+a:active {text-decoration: none; color: #93cfe2;}
+a:hover {text-decoration: none; color: white;}
+
+input[type="button"], input[type="submit"], .button {
+	position: relative;
+	color: #265273!important;
+	text-shadow: 0px 1px 2px #ffffff;
+	cursor: pointer;
+	margin: 1px;
+	border: none;
+	line-height: 20px;
+	min-height: 20px;
+	min-width: 80px;
+	font-weight: bold;
+	font-size: 12px;
+	border-radius: 10px;
+	background-color: #B0C4D6;
+	background-image: linear-gradient(#cddbe8, #94adc4);
+	background-image: -o-linear-gradient(#cddbe8, #94adc4);
+	background-image: -moz-linear-gradient(#cddbe8, #94adc4);
+	background-image: -webkit-linear-gradient(#cddbe8, #94adc4);
+	background-image: -ms-linear-gradient(#cddbe8, #94adc4);
+	box-shadow: inset 0px 1px 1px #d4ebf4, inset 0px -1px 1px #afdaea, inset 1px 1px 6px #dbffff, inset -1px -1px 6px #768fa5;
+}
+input[type="button"]:hover, input[type="submit"]:hover, .button:hover {
+	color: #ffffff!important;
+	text-shadow: 0px 1px 2px #000000;
+	background-color: #476679;
+	background-image: linear-gradient(#5b849a, #334859);
+	background-image: -o-linear-gradient(#5b849a, #334859);
+	background-image: -moz-linear-gradient(#5b849a, #334859);
+	background-image: -webkit-linear-gradient(#5b849a, #334859);
+	background-image: -ms-linear-gradient(#5b849a, #334859);
+	box-shadow: inset 0px 1px 1px #d4ebf4, inset 0px -1px 1px #afdaea, inset 1px 1px 6px #a6d0e9, inset -1px -1px 6px #06384c;
+}
+input[type="button"]:active, input[type="submit"]:active, .button:active {
+	color: #ffffff!important;
+	text-shadow: 0px 1px 2px #000000;
+	background-color: #476679;
+	background-image: linear-gradient(#334859, #5b849a);
+	background-image: -o-linear-gradient(#334859, #5b849a);
+	background-image: -moz-linear-gradient(#334859, #5b849a);
+	background-image: -webkit-linear-gradient(#334859, #5b849a);
+	background-image: -ms-linear-gradient(#334859, #5b849a);
+	box-shadow: inset 0px 1px 1px #afdaea, inset 0px -1px 1px #d4ebf4, inset 1px 1px 6px #06384c, inset -1px -1px 6px #a6d0e9;
+}
+input[type="button"]:disabled, input[type="submit"]:disabled {
+	color: #737373!important;
+	cursor: default;
+	text-shadow: 0px 1px 2px #ffffff;
+	background-color: #BCBCBC;
+	background-image: linear-gradient(#d5d5d5, #a3a3a3);
+	background-image: -o-linear-gradient(#d5d5d5, #a3a3a3);
+	background-image: -moz-linear-gradient(#d5d5d5, #a3a3a3);
+	background-image: -webkit-linear-gradient(#d5d5d5, #a3a3a3);
+	background-image: -ms-linear-gradient(#d5d5d5, #a3a3a3);
+	box-shadow: inset 0px 1px 1px #e0e0e0, inset 0px -1px 1px #c6c6c6, inset 1px 1px 6px #ededed, inset -1px -1px 6px #858585;
+}

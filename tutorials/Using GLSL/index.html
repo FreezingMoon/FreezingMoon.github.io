@@ -1,0 +1,16 @@
+<p style="text-align: justify;">In this tutorial, we are going to learn some cool things:<br /> - How to bake ambient occlusion (AO) maps<br /> - How to create specularity and normal maps<br /> - How to use Gimp for texturing<br /> - How to arrange and make textures work in real time</p>
+<p style="text-align: justify;">All of this is going to be accomplished with open source software! I am going to use only this set of tools:</p>
+<div class="center"><strong>[ <a target="_blank" href="http://www.smart-page.net/smartnormal/fl10.htm">SmartNormal</a> ] [ <a target="_blank" href="http://www.gimp.org/downloads">Gimp</a> ] [ <a target="_blank" href="http://www.blender.org/download/get-256-beta">Blender 2.5x</a> ] [ <a target="_blank" href="http://cgtextures.com">CG Textures</a> ]</strong></div>
+<p>&nbsp;</p>
+<div class="center"><iframe width="800" height="630" frameborder="0" src="http://www.youtube.com/embed/W4rjoKiypW0" title="YouTube video player"></iframe></div>
+<div class="center">
+<h2><a target="_blank" href="http://www.box.net/shared/rvf97qf2nu">Click here for the project files.</a></h2>
+</div>
+<p style="text-align: justify;">It goes a bit fast, so I will try to summarize it here:<br /> I did two unwraps for the vase, an AO UV texture and a COL UV texture. I used the AO unwrap for the AO map only, and COL for the other 3 textures. If I'd need more space on a specific area of the model, I could spare lots of texture space with this method.</p>
+<p style="text-align: justify;">For creating the specularity map, if it was too quick:<br /> Load your colour/diffuse image in, desaturate it, and after that, in Levels -&gt; try to adjust the values to the point, where most of it is black, and only the parts that you want to be highlighted are white.</p>
+<p style="text-align: justify;">Creating normal map:<br /> You just simply load in your colour map into <a target="_blank" href="http://www.smart-page.net/smartnormal/fl10.htm">SmartNormal</a>, and use the settings that suite your taste.</p>
+<p style="text-align: justify;">Baking AO map:<br /> After unwrapping everything, and adding an image to it, you just go to the Baking options under the Render tab, and set it to Ambient occlusion, normalised or not, margin to 2-4. Hit bake and wait.</p>
+<p style="text-align: justify;">Arranging textures in blender:<br /> Top layer goes for diffuse map usually, set to UV/COL/Flat with a color value set to 1.</p>
+<p style="text-align: justify;">Under that, there is the AO texture -&gt; UV/AO/Flat with col value 1, blending mode set to multiply or overlay.</p>
+<p style="text-align: justify;">Next up: Normal or Specular map<br /> Normal -&gt; UV/COL/Flat col value 0, normal value set to your taste, and Normal map box ticked under Image sampling.</p>
+<p style="text-align: justify;">Specular map -&gt; UV/COL/Flat, col value 0, specular intensity 1, blending mode to multiply.</p>

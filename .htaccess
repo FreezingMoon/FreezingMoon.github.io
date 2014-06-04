@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{QUERY_STRING} ^(%2d|-)[^=]+$ [NC]
+RewriteRule ^(.*) $1? [L]
+</IfModule>
+
+# BEGIN www to non-www 
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+AddType application/x-font-otf .otf
+AddType application/x-font-ttf .ttf .ttc
+AddType application/x-font-woff .woff
+#<FilesMatch "\.(ttf|ttc|otf|woff)$">
+#	Header set Access-Control-Allow-Origin "*" 
+#</FilesMatch>
+
+ErrorDocument 404 /
+
+RewriteEngine on
+RewriteRule ^tutorials/([0-9]+)/?$ /tutorials/?p=$1 [L]
+RewriteRule ^tutorials/([A-Za-z0-9_\-]+)/?$ /tutorials/?i=$1 [L]
