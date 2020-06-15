@@ -12,8 +12,20 @@ body {
 	font-size: 16px;
 	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
 	background: #142431 url('images/bg.jpg') no-repeat left top fixed;
-    background-size: cover;
+	background-size: cover;
 	/*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);*/
+}
+
+.logo {
+	display: block;
+	position: fixed;
+	top: 5px;
+	left: 0px;
+}
+@media screen and (max-width: 1250px) {
+	.logo {
+		display: none;
+	}
 }
 
 .rounded {
@@ -28,18 +40,6 @@ body {
 	box-shadow: inset 0 0 2px 2px rgba(105,110,185,0.6),
 	inset 0 0 10px 5px rgba(105,110,185,0.4),
 	0 0 20px 4px rgba(0,0,0,0.6);
-}
-
-table {
-	border-collapse: collapse;
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
-}
-
-td {
-	padding: 0px;
-	margin: 0px;
 }
 
 .center {
